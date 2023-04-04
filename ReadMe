@@ -1,0 +1,11 @@
+These are files that *could* be used for Spring 2022 poster projects on child imitation during play
+Datasets: 
+ - Spatial_Master_3_7_23 -- wide dataset containing every timebin. Does NOT contain base objects
+ - base_objects_freeplay -- long dataset containing ONLY bins where parent or child made an in or on relation. 
+                            Each relation gets its own row. Contains base objects. If base_object is NA, a second coder deemed a relation did not occur
+                                             
+Scripts: 
+  - compile_spatial_master.R -- how to go from Spatial_Master_3_7_23 to a long dataset where each relation gets its own row
+  - baseline_parent_spatial.R - created on 4/4/23 during procedures to get proportion of parent relations using semantically rich objects
+  - histogram_in_on_imitations - part of Sophie Scarpellini capstone to count imitations. Note - this was origially created for use with the Homeplay dataset
+  - near_far_relations - part of Sophie Scarpellini capstone to count near and far imitations. Note - this was origially created for use with the Homeplay dataset
