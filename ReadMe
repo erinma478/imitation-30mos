@@ -7,5 +7,5 @@ Datasets:
 Scripts: 
   - compile_spatial_master.R -- how to go from Spatial_Master_3_7_23 to a long dataset where each relation gets its own row
   - baseline_parent_spatial.R - created on 4/4/23 during procedures to get proportion of parent relations using semantically rich objects
-  - histogram_in_on_imitations - part of Sophie Scarpellini capstone to count imitations. Note - this was origially created for use with the Homeplay dataset
-  - near_far_relations - part of Sophie Scarpellini capstone to count near and far imitations. Note - this was origially created for use with the Homeplay dataset
+  - histogram_in_on_imitations.R - part of Sophie Scarpellini capstone to count imitations. Note - this was origially created for use with the Homeplay dataset
+  - near_far_relations.R - part of Sophie Scarpellini capstone to count near and far imitations. Note - this was origially created for use with the Homeplay dataset
