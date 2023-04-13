@@ -36,7 +36,7 @@ Abstract = c(15, 16, 24, 25, 30 ,31)
 
 data2 = alldata %>%
   mutate(SR = ifelse(placed_object %in% Semantically_Rich & base_object %in% Semantically_Rich, 1, 0)) %>%
-  filter(who_relation == "child_on" | who_relation == "child_in")
+  filter(imitation == 1)
   
 data_sum = data2 %>%
   group_by(SR) %>%
@@ -48,7 +48,10 @@ library(ggplot2)
 data_sum$SR = factor(data_sum$SR, levels = c(0,1), labels = c("Abstract", "Semantically Rich"))
 
 ggplot(data = data_sum, aes(x = SR, y = proportion)) +
-  geom_col() + theme_classic( ) + xlab("Type of Toy") + ylab("Proportion of Imitations Made by Infants")
+  geom_col() + 
+  theme_classic( ) + 
+  xlab("Type of Toy") + 
+  ylab("Proportion of Imitations Made by Infants")
 
 
 
