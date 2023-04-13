@@ -9,6 +9,7 @@ Scripts:
   - baseline_parent_spatial.R - created on 4/4/23 during procedures to get proportion of parent relations using semantically rich objects
   - child_imitation_SR.R - created on 4/11/23 during procedures to get proportion of child imitation using semantically rich objects
      - imitations counted were any time a child relation occurred after the same parent relation, within the same dyad
+  - child_near_far_imitation.R - created on 4/13/23 during tea time to get proportion of child imitations that were "near" (both objects same as parents) or "far" (1 or both objects differed)
   
   - histogram_in_on_imitations.R - part of Sophie Scarpellini capstone to count imitations. Note - this was origially created for use with the Homeplay dataset
   - near_far_relations.R - part of Sophie Scarpellini capstone to count near and far imitations. Note - this was origially created for use with the Homeplay dataset
