@@ -52,7 +52,10 @@ library(ggplot2)  # this opens the package - you need to run this every time you
 data_sum$SR = factor(data_sum$SR, levels = c(0,1), labels = c("Abstract", "Semantically Rich"))
 # create bar plot
 ggplot(data = data_sum, aes(x = SR, y = proportion)) +
-  geom_col()
+  geom_col()+
+  theme_classic()+
+  xlab("Toy Type")+
+  ylab("Proportion of spatial relations made by parent")
 
 # give category labels
 data_sum2$PlacedS = factor(data_sum2$PlacedS, levels = c(0,1), labels = c("Abstract", "Semantically Rich"))
@@ -64,4 +67,6 @@ ggplot(data = data_sum2, aes(x = PlacedS, y = proportion)) +
 data_sum3$EitherS = factor(data_sum3$EitherS, levels = c(0,1), labels = c("Abstract", "Semantically Rich"))
 # create bar plot
 ggplot(data = data_sum3, aes(x = EitherS, y = proportion)) +
-  geom_col()
+  geom_col()+
+  theme_classic()+
+  xla
