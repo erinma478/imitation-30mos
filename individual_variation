@@ -1,0 +1,14 @@
+# compile data as needed using child_interaction, then:
+
+# regroup with subject included
+data_sum_ind = data2 %>%
+  count(subject,near_far,SR)
+
+# turn SR from continuous to factor
+data_sum_ind$SR = factor(data_sum_ind$SR, levels = c(0,1), labels = c("Abstract", "Semantically Rich"))
+
+# plot individual points for each subject
+ggplot(data_sum_ind, aes(x=SR, y=n, color = near_far, shape = near_far)) +
+  geom_point(position=position_dodge(0.8)) +
+  theme_classic()+
+  scale_color_manual(name  ="Type of Imitation", values=c("grey20", "grey70"))
