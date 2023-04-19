@@ -70,10 +70,10 @@ pdata = MyData %>%
 # calculate the proportion of parent spatial relations in each category
 pdata_sum = pdata %>%
   group_by(SR) %>%
-  summarise(n = n(), proportion = n()/nrow(data2))
+  summarise(n = n(), proportion = n()/nrow(pdata))
   
  # give category labels
-pdata_sum$SR = factor(data_sum$SR, levels = c(0,1), labels = c("Abstract", "Semantically Rich"))
+pdata_sum$SR = factor(pdata_sum$SR, levels = c(0,1), labels = c("Abstract", "Semantically Rich"))
 
 install.packages("ggplot2")  # this installs - you only need to run this once
 library(ggplot2)  # this opens the package - you need to run this every time you open R
